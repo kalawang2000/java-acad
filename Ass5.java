@@ -14,7 +14,6 @@ class Ass5 {
 		 System.out.println("Sum of x - y + 2 = " + sumb);
 		 System.out.println("Sum of (x+y) * 2 = " + sumc);
 		 System.out.println("Sum of y % x = " + sumd);
-		 
 				
     }
 }
