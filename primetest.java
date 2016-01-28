@@ -13,7 +13,7 @@ class primetest {
   
 	public static void main(String[] args) { 
 		int num1=0;
-		boolean  bool = false;
+		boolean  bool = false, fl=false;
 		
 		primetest p = new primetest(); 
 		
@@ -22,13 +22,16 @@ class primetest {
         
 		do {
 			try {
-				System.out.print("Please enter an integer: ");
+				if (fl==true)
+					System.out.print("Wrong input!!!! Please enter an integer: ");
+				else
+					System.out.print("Please enter an integer: ");
 				num1 = in.nextInt();
 				} 
 			catch (InputMismatchException e) {
-				System.out.print("(Wrong input) ");
 				}
 				in.nextLine(); // clears the buffer
+				fl=true;
 		} while (num1 <= 0);
 		
 		
